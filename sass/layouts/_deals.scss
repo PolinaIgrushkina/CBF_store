@@ -1,15 +1,10 @@
-.container {
-  background-color: #111113;
-}
-
-.offer {
+.deals {
   padding-left: 175px;
-  padding-right: 174px;
-  padding-top: 130px;
-  padding-bottom: 201px;
+  padding-right: 172px;
+  padding-bottom: 200px;
 }
 
-.title-div {
+.deals-title-div {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -17,8 +12,8 @@
   margin-bottom: 50px;
 }
 
-.title-text {
-  width: 700px;
+.deals-title-text {
+  width: 436px;
 
   font-family: 'Poppins';
   font-style: normal;
@@ -29,19 +24,19 @@
   letter-spacing: -4px;
   text-transform: uppercase;
 
-  background: linear-gradient(265.19deg, #9130F4 15.63%, #6A67FF 24.89%, #86FF86 50.65%);
+  background: linear-gradient(85.96deg, #17943A 11.02%, #01C922 32.77%, #BAF068 64.07%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.see-offers-div {
+.see-deals-div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.see-offers-text {
+.see-deals-text {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -56,82 +51,84 @@
   }
 }
 
-.more-offers-div {
+.more-deals-div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.more-offers-text {
+.more-deals-text {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
-   
+
   color: #FFFFFF;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 }
 
-.offers-list {
+.deals-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 1573px;
-  height: 855px;
-  row-gap: 39px;
+  height: 857px;
+  row-gap: 41px;
   column-gap: 37px;
 }
 
-.offers-item-first {
+.deals-item-first {
   width: 285px;
-  height: 407px;
-  padding: 28px 28px 26px 29px;
+  height: 408px;
+  padding: 28px 28px 25.5px 29px;
 
   border-radius: 17px;
-  background-image: url(../../images/violet-background.png);
+  background-image: url(../../images/green-background.png);
   background-size: cover;
   background-position: center;
+
   @include retina {
-  background-image: url(../../images/violet-background-2x.png);
+    background-image: url(../../images/green-background-2x.png);
   }
 }
 
-.offers-item-first h3 {
+.deals-item-first h3 {
   margin-bottom: 23px;
 
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 102.5%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #000000;
 }
 
-.offers-item-first p {
+.deals-item-first p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 117.5%;
-  color: #FFFFFF;
+  color: #000000;
 }
 
-.offers-item-title-first {
+.deals-item-title-first {
   width: 227px;
   height: 166px;
   margin-bottom: 164px;
 }
 
-.offers-item {
+.deals-item {
   width: 285px;
   height: 407px;
-  background: linear-gradient(180deg, #6C65FF 72.92%, #5E08B8 100%);
-  border-radius: 17px;
+  background: linear-gradient(180deg, #2FC458 74.88%, #8FE859 95.27%);
+  border-radius: 20.1228px;
 }
 
 .white-background {
@@ -149,30 +146,30 @@
   left: 0;
 }
 
-.offers-item-description {
+.deals-item-description {
   padding-left: 17px;
   padding-top: 18.47px;
   padding-bottom: 17.86px;
 }
 
-.offers-item-title {
-margin-bottom: 5px;
+.deals-item-title {
+  margin-bottom: 5px;
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 100.7%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100.7%;
 
-color: #FFFFFF;
+  color: #000000;
 }
 
-.offers-item-text {
+.deals-item-text {
   width: 241px;
   padding: 6.34px 9.51px;
   margin-bottom: 34px;
-  
-  background: rgba(24, 17, 100, 0.4);
+
+  background: #BDEDBC;
   border-radius: 18.3822px;
 
   font-family: 'Montserrat';
@@ -180,17 +177,17 @@ color: #FFFFFF;
   font-weight: 400;
   font-size: 14px;
   line-height: 120.7%;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(0, 0, 0, 0.65);
 }
 
-.offers-item-information {
+.deals-item-information {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   gap: 78px;
 }
 
-.new-price {
+.new-price.black {
   margin-right: 11px;
 
   font-family: 'Montserrat';
@@ -198,11 +195,11 @@ color: #FFFFFF;
   font-weight: 700;
   font-size: 24px;
   line-height: 23px;
-  
-  color: #FFFFFF;
+
+  color: #000000;
 }
 
-.old-price {
+.old-price.black {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -210,15 +207,15 @@ color: #FFFFFF;
   line-height: 13px;
   text-decoration: line-through;
 
-  color: #07B707;
+  color: #000000;
 }
 
-.mark {
+.mark.black {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 15.2128px;
   line-height: 15px;
 
-  color: #C2C2C2;
+  color: #000000;
 }

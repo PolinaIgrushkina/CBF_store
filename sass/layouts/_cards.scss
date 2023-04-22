@@ -4,7 +4,7 @@
   gap: 44px;
   padding-left: 175px;
   padding-right: 175px;
-  padding-bottom: 322px;
+  padding-bottom: 200px;
 }
 
 .card {
@@ -26,6 +26,10 @@
 }
 
 .card-text {
+  width: 325px;
+  height: 88px;
+  margin-bottom: 26px;
+
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -36,7 +40,15 @@
 }
 
 .card-text.white{
+  width: 257px;
+  height: 87px;
   color: #FFFFFF;
+}
+
+.card-link-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .card-link {

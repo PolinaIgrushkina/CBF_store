@@ -1,0 +1,43 @@
+.partners {
+  padding-left: 175px;
+  padding-right: 175px;
+  padding-bottom: 200px;
+}
+
+.partners-title {
+  width: 848px;
+  margin-bottom: 50px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 100%;
+
+  letter-spacing: -4px;
+  text-transform: uppercase;
+
+  background: linear-gradient(85.96deg, #17943A 11.02%, #01C922 32.77%, #BAF068 64.07%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.first-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 151px;
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 147px;
+}
