@@ -1,0 +1,41 @@
+.brands {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  padding-left: 175px;
+  padding-right: 175px;
+  padding-bottom: 199px;
+}
+
+.brands-first-column {
+  width: 759px;
+  height: 605.67px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 28.75px;
+  row-gap: 30.67px;
+}
+
+.brand-card {
+  position: relative;
+}
+
+.brand-name {
+  position: absolute;
+  left: 25.87px;
+  bottom: 24.38px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.brands-second-column {
+  width: 763px;
+  height: 607px;
+  border-radius: 34px;
+}

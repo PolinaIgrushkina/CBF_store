@@ -78,5 +78,8 @@
 <symbol id="icon-user" viewBox="0 0 33 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1333" d="M26.831 28v-2.667c0-1.415-0.562-2.771-1.562-3.771s-2.357-1.562-3.771-1.562h-10.667c-1.414 0-2.771 0.562-3.771 1.562s-1.562 2.357-1.562 3.771v2.667M21.497 9.333c0 2.946-2.388 5.333-5.333 5.333s-5.333-2.388-5.333-5.333c0-2.946 2.388-5.333 5.333-5.333s5.333 2.388 5.333 5.333z"></path>
 </symbol>
+<symbol id="icon-triangle-right" viewBox="0 0 32 32">
+<path d="M24 16l-14.4 8v-16l14.4 8z"></path>
+</symbol>
 </defs>
 </svg>
