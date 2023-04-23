@@ -1,0 +1,144 @@
+.dropdown-menu {
+  position: absolute;
+  top: 217px;
+  left: 246px;
+  z-index: 2;
+
+  width: 1429px;
+  height: 588px;
+
+  display: flex;
+  flex-direction: row;
+  background-color: aquamarine;
+}
+
+.dropdown-menu-categories {
+  width: 434px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 9px;
+
+  background-color: #000000;
+}
+
+.dropdown-menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 359px;
+  height: 52px;
+  padding-left: 37px;
+  padding-right: 38px;
+
+  background-color: #000000;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100.7%;
+  color: #FFFFFF;
+
+  &:hover,
+  :focus {
+    background-color: #57DD44;
+    color: #000000;
+
+    width: 434px;
+    height: 74px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    
+  }
+}
+
+.dropdown-menu-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+
+.dropdown-menu-item:hover .cooker-icon use {
+  fill: #000000;
+}
+
+.dropdown-menu-item:hover .arrow-icon path {
+  stroke: #000000;
+}
+
+
+.dropdown-menu-products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  padding: 20px 38px;
+  background-color: #17171B;
+}
+
+.dropdown-menu-products li {
+width: 299px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100.7%;
+
+color: #FFFFFF;
+}
+
+.dropdown-menu-brands {
+  padding: 34px 67px 34px 68px;
+  background-color: #28282D;
+}
+
+.dropdown-menu-brands h4 {
+  margin: 0 16.5px 30px 16.5px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100.7%;
+
+  color: #FFFFFF;
+}
+
+.dropdown-menu-brands ul {
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
+
+.dropdown-menu-offer {
+  width: 312px;
+  height: 588px;
+  background: linear-gradient(180deg, #6C65FF 72.92%, #5E08B8 100%);
+}
+
+.dropdown-menu-white-background {
+  position: relative;
+  width: 312px;
+  height: 376px;
+  box-shadow: 17.1144px 26.6224px 47.5401px rgba(0, 0, 0, 0.26);
+  border-radius: 0px 0px 17px 17px;
+  background-color: #fff;
+  
+  padding: 86.65px 20px 86.65px 19px;
+}
+
+.white-background-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dropdown-menu-offer-description {
+  padding-left: 30px;
+  padding-top: 53px;
+  padding-bottom: 52px;
+}
