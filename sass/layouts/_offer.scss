@@ -1,19 +1,7 @@
-.container {
-  position: relative;
-  background-color: #111113;
-}
-
 .help-icon {
   position: absolute;
   right: 43px;
   bottom: 43px;
-}
-
-.offer {
-  padding-left: 175px;
-  padding-right: 174px;
-  padding-top: 130px;
-  padding-bottom: 201px;
 }
 
 .title-div {
@@ -87,10 +75,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1573px;
-  height: 855px;
+  justify-content: space-between;
   row-gap: 39px;
-  column-gap: 37px;
 }
 
 .offers-item-first {
@@ -158,8 +144,8 @@
 
 .offers-item-description {
   padding-left: 17px;
-  padding-top: 18.47px;
-  padding-bottom: 17.86px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .offers-item-title {
@@ -176,7 +162,7 @@ color: #FFFFFF;
 
 .offers-item-text {
   width: 241px;
-  padding: 6.34px 9.51px;
+  padding: 6px 9px;
   margin-bottom: 34px;
   
   background: rgba(24, 17, 100, 0.4);
@@ -224,7 +210,7 @@ color: #FFFFFF;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 15.2128px;
+  font-size: 15px;
   line-height: 15px;
 
   color: #C2C2C2;

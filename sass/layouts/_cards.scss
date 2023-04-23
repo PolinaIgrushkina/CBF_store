@@ -1,10 +1,7 @@
 .cards {
   display: flex;
   flex-direction: row;
-  gap: 44px;
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-bottom: 200px;
+  justify-content: space-between;
 }
 
 .card {

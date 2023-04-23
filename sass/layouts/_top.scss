@@ -1,9 +1,3 @@
-.top-categories {
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-bottom: 200px;
-}
-
 .top-categories-title {
   width: 880px;
   margin-bottom: 50px;
@@ -25,7 +19,7 @@
 .top-categories-list {
   display: flex;
   flex-direction: row;
-  gap: 31px;
+  justify-content: space-between;
 }
 
 .top-categories-item {

@@ -47,6 +47,15 @@ a {
   display: none;
 }
 
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  padding: 130px 175px 0 175px;
+  background-color: #111113;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -82,8 +91,9 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding-left: 425px;
-  padding-right: 170.85px;
+  padding-right: 171px;
   padding-top: 23px;
   padding-bottom: 19px;
   background: #17171B;
@@ -93,8 +103,8 @@ a {
 .navigation-left {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 40px;
-  margin-right: 52px;
 }
 .navigation-left a {
   font-family: "Poppins";
@@ -111,16 +121,18 @@ a {
 .navigation-right {
   display: flex;
   flex-direction: row;
-  margin-left: 45.15px;
+  justify-content: space-between;
   gap: 35px;
 }
 
 .form {
   position: relative;
+  display: block;
+  width: 797px;
 }
 
 .input {
-  width: 797px;
+  width: 100%;
   height: 55px;
   padding: 14px 22px;
   background-color: #28282D;
@@ -150,8 +162,9 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding-left: 425px;
-  padding-right: 171.3px;
+  padding-right: 171px;
   padding-top: 20px;
   padding-bottom: 20px;
   background: #000000;
@@ -161,8 +174,9 @@ a {
 .categories-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 40px;
-  margin-right: 115px;
+  justify-content: space-between;
 }
 
 .categories-item {
@@ -198,9 +212,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 175px;
   justify-content: space-between;
-  width: 174.7px;
-  height: 37px;
 }
 
 .dropdown-menu {
@@ -210,9 +223,9 @@ a {
   z-index: 2;
   width: 1429px;
   height: 588px;
-  display: flex;
+  display: none;
   flex-direction: row;
-  background-color: aquamarine;
+  background-color: #000000;
 }
 
 .dropdown-menu-categories {
@@ -290,7 +303,7 @@ a {
 }
 
 .dropdown-menu-brands h4 {
-  margin: 0 16.5px 30px 16.5px;
+  margin-bottom: 30px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -335,7 +348,7 @@ a {
 
 .slider {
   position: relative;
-  width: 1920px;
+  width: 100%;
   height: 528px;
   padding-top: 130px;
 }
@@ -377,7 +390,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1820px;
   margin: 0px auto 54px auto;
 }
 
@@ -412,22 +424,10 @@ a {
   color: #FFFFFF;
 }
 
-.container {
-  position: relative;
-  background-color: #111113;
-}
-
 .help-icon {
   position: absolute;
   right: 43px;
   bottom: 43px;
-}
-
-.offer {
-  padding-left: 175px;
-  padding-right: 174px;
-  padding-top: 130px;
-  padding-bottom: 201px;
 }
 
 .title-div {
@@ -494,10 +494,8 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1573px;
-  height: 855px;
+  justify-content: space-between;
   row-gap: 39px;
-  column-gap: 37px;
 }
 
 .offers-item-first {
@@ -565,8 +563,8 @@ a {
 
 .offers-item-description {
   padding-left: 17px;
-  padding-top: 18.47px;
-  padding-bottom: 17.86px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .offers-item-title {
@@ -581,7 +579,7 @@ a {
 
 .offers-item-text {
   width: 241px;
-  padding: 6.34px 9.51px;
+  padding: 6px 9px;
   margin-bottom: 34px;
   background: rgba(24, 17, 100, 0.4);
   border-radius: 18.3822px;
@@ -624,7 +622,7 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 15.2128px;
+  font-size: 15px;
   line-height: 15px;
   color: #C2C2C2;
 }
@@ -632,20 +630,20 @@ a {
 .brands {
   display: flex;
   flex-direction: row;
-  gap: 48px;
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-bottom: 199px;
+  justify-content: space-between;
 }
 
 .brands-first-column {
-  width: 759px;
-  height: 605.67px;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.first, .second {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 28.75px;
-  row-gap: 30.67px;
+  justify-content: space-between;
 }
 
 .brand-card {
@@ -654,8 +652,8 @@ a {
 
 .brand-name {
   position: absolute;
-  left: 25.87px;
-  bottom: 24.38px;
+  left: 26px;
+  bottom: 24px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -668,18 +666,14 @@ a {
 }
 
 .brands-second-column {
-  width: 763px;
-  height: 607px;
+  width: 48%;
   border-radius: 34px;
 }
 
 .cards {
   display: flex;
   flex-direction: row;
-  gap: 44px;
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-bottom: 200px;
+  justify-content: space-between;
 }
 
 .card {
@@ -734,12 +728,6 @@ a {
 
 .card-link.white {
   color: #FFFFFF;
-}
-
-.deals {
-  padding-left: 175px;
-  padding-right: 172px;
-  padding-bottom: 200px;
 }
 
 .deals-title-div {
@@ -806,16 +794,14 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1573px;
-  height: 857px;
+  justify-content: space-between;
   row-gap: 41px;
-  column-gap: 37px;
 }
 
 .deals-item-first {
   width: 285px;
   height: 408px;
-  padding: 28px 28px 25.5px 29px;
+  padding: 28px 28px 25px 29px;
   border-radius: 17px;
   background-image: url(../../images/green-background.png);
   background-size: cover;
@@ -857,7 +843,7 @@ a {
   width: 285px;
   height: 407px;
   background: linear-gradient(180deg, #2FC458 74.88%, #8FE859 95.27%);
-  border-radius: 20.1228px;
+  border-radius: 20px;
 }
 
 .white-background {
@@ -877,8 +863,8 @@ a {
 
 .deals-item-description {
   padding-left: 17px;
-  padding-top: 18.47px;
-  padding-bottom: 17.86px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .deals-item-title {
@@ -893,10 +879,10 @@ a {
 
 .deals-item-text {
   width: 241px;
-  padding: 6.34px 9.51px;
+  padding: 6px 9px;
   margin-bottom: 34px;
   background: #BDEDBC;
-  border-radius: 18.3822px;
+  border-radius: 18px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -936,15 +922,9 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 15.2128px;
+  font-size: 15px;
   line-height: 15px;
   color: #000000;
-}
-
-.news {
-  padding-left: 175px;
-  padding-right: 177px;
-  padding-bottom: 200px;
 }
 
 .news-title-div {
@@ -1009,7 +989,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 447px;
+  width: 100%;
 }
 
 .blog-text {
@@ -1022,7 +1002,7 @@ a {
 }
 
 .blog-text.first {
-  width: 698px;
+  width: 100%;
 }
 
 .blog-title {
@@ -1041,17 +1021,11 @@ a {
 }
 
 .line {
-  width: 760px;
+  width: 100% px;
   height: 2px;
   background-color: #28282D;
   margin-top: 60px;
   margin-bottom: 60px;
-}
-
-.partners {
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-bottom: 200px;
 }
 
 .partners-title {
@@ -1079,21 +1053,13 @@ a {
 .first-line {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 151px;
+  justify-content: space-between;
 }
 
 .second-line {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 147px;
-}
-
-.top-categories {
-  padding-left: 175px;
-  padding-right: 175px;
-  padding-bottom: 200px;
+  justify-content: space-between;
 }
 
 .top-categories-title {
@@ -1115,7 +1081,7 @@ a {
 .top-categories-list {
   display: flex;
   flex-direction: row;
-  gap: 31px;
+  justify-content: space-between;
 }
 
 .top-categories-item {
@@ -1144,8 +1110,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 78px;
-  padding: 25px 176.5px 32px 175px;
+  justify-content: space-between;
+  padding: 25px 176px 32px 176px;
   background: #17171B;
   box-shadow: 2px 10px 25px rgba(0, 0, 0, 0.5);
 }
@@ -1214,14 +1180,8 @@ a {
 .footer-main-first-line {
   display: flex;
   flex-direction: row;
-  gap: 160.5px;
-  padding: 36px 123.5px 13px 169px;
-}
-
-.footer-information-container {
-  display: flex;
-  flex-direction: row;
-  gap: 161px;
+  justify-content: space-between;
+  padding: 36px 123px 13px 169px;
 }
 
 .footer-information-title {
@@ -1281,7 +1241,7 @@ a {
 }
 
 .footer-main-second-line {
-  padding: 0 175px 30px 176px;
+  padding: 0 175px 30px 175px;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -1327,7 +1287,8 @@ a {
 }
 
 .footer-payment {
+  width: 591px;
   display: flex;
   flex-direction: row;
-  gap: 7.71px;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */

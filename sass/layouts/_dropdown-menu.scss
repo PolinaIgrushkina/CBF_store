@@ -7,9 +7,9 @@
   width: 1429px;
   height: 588px;
 
-  display: flex;
+  display: none;
   flex-direction: row;
-  background-color: aquamarine;
+  background-color: #000000;
 }
 
 .dropdown-menu-categories {
@@ -97,7 +97,7 @@ color: #FFFFFF;
 }
 
 .dropdown-menu-brands h4 {
-  margin: 0 16.5px 30px 16.5px;
+  margin-bottom: 30px;
 
   font-family: 'Poppins';
   font-style: normal;
