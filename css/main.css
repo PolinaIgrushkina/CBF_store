@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -1151,13 +1155,13 @@ a {
   display: flex;
   flex-direction: row;
   align-items: start;
+  justify-content: space-between;
 }
 
 .footer-privacy-container {
   display: flex;
   flex-direction: row;
   gap: 19px;
-  margin-right: 420px;
 }
 
 .footer-privacy {
