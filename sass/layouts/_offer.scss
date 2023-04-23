@@ -1,5 +1,12 @@
 .container {
+  position: relative;
   background-color: #111113;
+}
+
+.help-icon {
+  position: absolute;
+  right: 43px;
+  bottom: 43px;
 }
 
 .offer {

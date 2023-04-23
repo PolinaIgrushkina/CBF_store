@@ -32,6 +32,10 @@
   font-size: 36px;
   line-height: 100%;
   color: #FFFFFF;
+
+  &:hover, :focus {
+    text-decoration: underline;
+  }
 }
 
 .brands-second-column {
