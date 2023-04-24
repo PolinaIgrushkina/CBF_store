@@ -2821,11 +2821,17 @@
                   srcset="./images/blog1-1x.png 1x, ./images/blog1-2x.png 2x"
                   media="(min-width: 1920px)"
                 />
+                <source
+                  srcset="
+                    ./images/blog1-mob-1x.png 1x,
+                    ./images/blog1-mob-2x.png 2x
+                  "
+                  media="(min-width: 375px)"
+                />
                 <img
                   src="./images/blog1-1x.png"
                   alt="blog1"
-                  width="763"
-                  class="blog-photo"
+                  class="blog-photo-mob first"
                 />
               </picture>
               <div class="block-description">
@@ -2846,9 +2852,12 @@
                 <picture>
                   <source
                     srcset="./images/blog2-1x.png 1x, ./images/blog2-2x.png 2x"
-                    media="(min-width: 1920px)"
                   />
-                  <img src="./images/blog2-1x.png" alt="blog2" width="279" />
+                  <img
+                    src="./images/blog2-1x.png"
+                    alt="blog2"
+                    class="blog-photo-mob"
+                  />
                 </picture>
                 <div class="block-description">
                   <p class="blog-text">December 17, 2022</p>
@@ -2868,9 +2877,12 @@
                 <picture>
                   <source
                     srcset="./images/blog3-1x.png 1x, ./images/blog3-2x.png 2x"
-                    media="(min-width: 1920px)"
                   />
-                  <img src="./images/blog3-1x.png" alt="blog3" width="279" />
+                  <img
+                    src="./images/blog3-1x.png"
+                    alt="blog3"
+                    class="blog-photo-mob"
+                  />
                 </picture>
                 <div class="block-description">
                   <p class="blog-text">December 17, 2022</p>
@@ -2886,6 +2898,13 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="more-offers-mob">
+            <a href="index.html" class="more-offers-text">View all blogs</a>
+            <svg width="22px" height="22px" fill="#fff">
+              <use href="./images/symbol-defs.svg#icon-triangle-right"></use>
+            </svg>
           </div>
         </section>
 
