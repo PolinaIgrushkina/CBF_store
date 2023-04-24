@@ -111,9 +111,6 @@
   background-image: url(../../images/violet-background.png);
   background-size: cover;
   background-position: center;
-  @include retina {
-  background-image: url(../../images/violet-background-2x.png);
-  }
 }
 
 .offers-item-first h3 {

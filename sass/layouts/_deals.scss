@@ -100,10 +100,6 @@
   background-image: url(../../images/green-background.png);
   background-size: cover;
   background-position: center;
-
-  @include retina {
-    background-image: url(../../images/green-background-2x.png);
-  }
 }
 
 .deals-item-first h3 {
