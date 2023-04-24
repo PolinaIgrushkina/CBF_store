@@ -1,8 +1,7 @@
 .slider {
   width: 100%;
-  height: 216px;
+  height: 172px;
   position: relative;
-  background-color: #111113;
 
   @include desktop {
   height: 528px;
@@ -11,8 +10,7 @@
   } 
 }
 
-// Slider mobile
-.slider-image-mob {
+.hero-image-mob {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,33 +20,6 @@
   @include desktop {
     display: none;
   }
-}
-
-.dots-mob {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 182px;
-
-  @include desktop {
-    display: none;
-  }
-}
-
-.dot-mob {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #3F3C3C;
-} 
-
-.active-dot-mob {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #00D700;
 }
 
 // Slider desktop

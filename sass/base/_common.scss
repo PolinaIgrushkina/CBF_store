@@ -6,9 +6,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  padding: 30px 14px;
+  background-color: #111113;
+
+  @include desktop {
   gap: 200px;
   padding: 130px 175px 0 175px;
-  background-color: #111113;
+  }
 }
 
 body {

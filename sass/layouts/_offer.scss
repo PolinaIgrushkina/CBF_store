@@ -1,7 +1,12 @@
 .help-icon {
   position: absolute;
+  right: 15px;
+  bottom: 15px;
+
+  @include desktop {
   right: 43px;
   bottom: 43px;
+  }
 }
 
 .title-div {
@@ -9,25 +14,47 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include desktop {
   margin-bottom: 50px;
+  }
 }
 
 .title-text {
-  width: 700px;
+  width: 100%;
 
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 72px;
-  line-height: 100%;
-
-  letter-spacing: -4px;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -2px;
   text-transform: uppercase;
 
   background: linear-gradient(265.19deg, #9130F4 15.63%, #6A67FF 24.89%, #86FF86 50.65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+  @include desktop {
+  width: 700px;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -4px;
+  }
+}
+
+.offers-list {
+  display: none;
+  
+  @include desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 39px;
+  }
 }
 
 .see-offers-div {
@@ -52,9 +79,13 @@
 }
 
 .more-offers-div {
+  display: none;
+
+  @include desktop {
   display: flex;
   flex-direction: row;
   align-items: center;
+  }
 }
 
 .more-offers-text {
@@ -69,14 +100,6 @@
   &:hover, &:focus {
     text-decoration: underline;
   }
-}
-
-.offers-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 39px;
 }
 
 .offers-item-first {
@@ -121,10 +144,15 @@
 }
 
 .offers-item {
+  width: 173px;
+  height: 349px;
+  background: linear-gradient(180deg, #6C65FF 72.92%, #5E08B8 100%);
+  
+  @include desktop {
   width: 285px;
   height: 407px;
-  background: linear-gradient(180deg, #6C65FF 72.92%, #5E08B8 100%);
   border-radius: 17px;
+  }
 }
 
 .white-background {
@@ -143,9 +171,10 @@
 }
 
 .offers-item-description {
-  padding-left: 17px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 21px 7px 36px 7px;
+  @include desktop {
+  padding: 18px 0 18px 17px;
+  }
 }
 
 .offers-item-title {
@@ -154,64 +183,176 @@ margin-bottom: 5px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 14px;
 line-height: 100.7%;
 
 color: #FFFFFF;
+
+@include desktop {
+  font-size: 18px;
+}
 }
 
 .offers-item-text {
-  width: 241px;
-  padding: 6px 9px;
-  margin-bottom: 34px;
-  
-  background: rgba(24, 17, 100, 0.4);
-  border-radius: 18.3822px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 120.7%;
   color: rgba(255, 255, 255, 0.65);
+
+  @include desktop {
+    width: 241px;
+    margin-bottom: 34px;
+    padding: 6px 9px;
+    background: rgba(24, 17, 100, 0.4);
+    border-radius: 18.3822px;
+    font-size: 14px;
+  }
 }
 
 .offers-item-information {
   display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+
+  @include desktop {
+  display: flex;
   flex-direction: row;
   align-items: baseline;
   gap: 78px;
+  }
+}
+
+.prices-div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+  }
 }
 
 .new-price {
-  margin-right: 11px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 17px;
   
   color: #FFFFFF;
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 23px;
+  }
 }
 
 .old-price {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 13px;
+  font-size: 10px;
+  line-height: 10px;
   text-decoration: line-through;
 
   color: #07B707;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 13px;
+  }
+}
+
+.mark-div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 5px;
+
+  @include desktop {
+    gap: 3px;
+    margin-top: 0;
+  }
+}
+
+.star-desk {
+  display: none;
+  @include desktop {
+    display: block;
+  }
 }
 
 .mark {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 10px;
+  line-height: 10px;
 
   color: #C2C2C2;
+  
+  @include desktop {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+// Mobile
+.offers-list-mob {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.white-background-mob {
+  position: relative;
+  width: 173px;
+  height: 199px;
+  background-color: #fff;
+  padding: 46px 3px 13px 3px;
+}
+
+.stars-mob {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  
+  @include desktop {
+    display: none;
+  }
+}
+
+.prices-div-mob {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.buy{
+  display: block;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.like {
+  display: block;
+  position: absolute;
+  top: 26px;
+  right: 6px;
+
+  @include desktop {
+    display: none;
+  }
 }
