@@ -1,48 +1,91 @@
+.top-categories {
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-bottom: 54px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
 .top-categories-title {
-  width: 880px;
-  margin-bottom: 50px;
+  width: 244px;
+  margin-bottom: 30px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+  font-size: 32px;
+  line-height: 110%;
+
+  letter-spacing: -2px;
+  text-transform: uppercase;
+
+  background: linear-gradient(265.19deg, #9130F4 15.63%, #6A67FF 24.89%, #86FF86 50.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  
+  @include desktop {
+  width: 880px;
+  margin-bottom: 50px;
   font-size: 72px;
   line-height: 100%;
-  
   letter-spacing: -4px;
-  text-transform: uppercase;
-  
+
   background: linear-gradient(85.96deg, #17943A 11.02%, #01C922 32.77%, #BAF068 64.07%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   background-clip: text;
+  }
 }
 
 .top-categories-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 15px;
+
+  @include desktop {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .top-categories-item {
   position: relative;
-  width: 369px;
-  height: 373px;
-  border-radius: 29px;
+  min-width: 170px;
+  max-height: 196px;
+  border-radius: 17px;
+
+  @include desktop {
+    width: 369px;
+    min-height: 373px;
+    border-radius: 29px;
+  }
 }
 
 .top-categories-link {
   position: absolute;
-  left: 22px;
-  top: 305px;
+  left: 12px;
+  bottom: 12px;
 
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
   
   color: #FFFFFF;
 
   &:hover, :focus {
     text-decoration: underline;
+  }
+
+  @include desktop {
+    left: 22px;
+    top: 305px;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
   }
 }

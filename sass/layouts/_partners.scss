@@ -1,25 +1,43 @@
 .partners-title {
-  width: 848px;
-  margin-bottom: 50px;
+  width: 254px;
+  margin-bottom: 30px;
+
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+
+  background: linear-gradient(265.19deg, #9130F4 15.63%, #6A67FF 24.89%, #86FF86 50.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+  @include desktop {
+  width: 848px;
+  margin-bottom: 50px;
+
   font-size: 72px;
   line-height: 100%;
-
   letter-spacing: -4px;
-  text-transform: uppercase;
 
   background: linear-gradient(85.96deg, #17943A 11.02%, #01C922 32.77%, #BAF068 64.07%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  }
 }
 
 .partners-list {
+  display: none;
+
+  @include desktop {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
+  }
 }
 
 .first-line {
@@ -32,4 +50,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.partners-list-mob {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 31px;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-bottom: 40px;
+
+  @include desktop {
+    display: none;
+  }
 }
