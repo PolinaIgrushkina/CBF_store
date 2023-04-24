@@ -214,12 +214,12 @@
 .footer-main-second-line {
   display: flex;
   flex-direction: column-reverse;
-  padding: 0 15px;
+  padding: 0 15px 63px 15px;
 
   @include desktop {
   padding: 0 175px 30px 175px;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   }
 }
@@ -227,15 +227,47 @@
 .footer-privacy-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto;
+
+  @include desktop {
   gap: 19px;
+  width: 100%;
+  margin: 0;
+  }
+}
+
+.footer-privacy-container img {
+  width: 79px;
+
+  @include desktop {
+    width: 107px;
+  }
 }
 
 .footer-privacy {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  @include desktop {
   gap: 11px;
   width: 433px;
+  }
+}
+
+.footer-privacy li:nth-child(1),
+.footer-privacy li:nth-child(2) {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .footer-privacy-first {
@@ -248,20 +280,43 @@
   color: #A7A7A7;
 }
 
+.footer-privacy-1-mob {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+  @include desktop {
+    display: none;
+  }
+}
+
 .vertical-line {
-  height: 19px;
+  height: 11px;
   width: 1px;
-  background-color: #A7A7A7;
+  background-color: #fff;
+
+  @include desktop {
+    height: 19px;
+    background-color: #A7A7A7;
+  }
 }
 
 .footer-privacy-link {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #FFFFFF;
+  @include desktop {
   font-size: 16px;
   line-height: 24px;
-
   color: #A7A7A7;
+  }
 }
 
 .footer-payment {
@@ -269,11 +324,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 31px;
 
   @include desktop {
-  width: 591px;  
-}
+  justify-content: end;
+  gap: 7px;
+  margin-bottom: 0; 
+  }
 }
 
 .footer-payment li {
@@ -282,3 +340,33 @@
   width: 59px;
   }
 }
+
+.footer-privacy-container-mob {
+  display: block; 
+  margin-bottom: 63px; 
+  @include desktop {
+    display: none;
+  }
+}
+
+.footer-privacy-container-mob li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3F3C3C;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.footer-privacy-container-mob p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #FFFFFF;
+}
+  
+    

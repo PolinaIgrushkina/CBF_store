@@ -168,5 +168,8 @@
 <symbol id="icon-burger-open" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M2.667 20.667v2.667h26.667v-2.667h-26.667zM2.667 14v2.667h26.667v-2.667h-26.667zM2.667 7.333v2.667h26.667v-2.667h-26.667z"></path>
 </symbol>
+<symbol id="icon-arrow_down" viewBox="0 0 31 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M9.945 11.37l5.916 5.916 5.916-5.916 1.826 1.826-7.742 7.742-7.742-7.742 1.826-1.826z"></path>
+</symbol>
 </defs>
 </svg>
