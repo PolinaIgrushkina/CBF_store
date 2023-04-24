@@ -3,25 +3,35 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  margin-bottom: 30px;
+
+  @include desktop {
   margin-bottom: 50px;
+  }
 }
 
 .deals-title-text {
-  width: 436px;
-
+  width: 192px;
+  
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 72px;
-  line-height: 100%;
-
-  letter-spacing: -4px;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -2px;
   text-transform: uppercase;
-
-  background: linear-gradient(85.96deg, #17943A 11.02%, #01C922 32.77%, #BAF068 64.07%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  
+  background: linear-gradient(265.19deg, #9130F4 15.63%, #6A67FF 24.89%, #86FF86 50.65%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  
+  @include desktop {
+    width: 700px;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: -4px;
+  }
 }
 
 .see-deals-div {
@@ -46,9 +56,13 @@
 }
 
 .more-deals-div {
+  display: none;
+  
+  @include desktop {
   display: flex;
   flex-direction: row;
   align-items: center;
+  }
 }
 
 .more-deals-text {
@@ -67,11 +81,14 @@
 }
 
 .deals-list {
+  display: none;
+  @include desktop {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 41px;
+  }
 }
 
 .deals-item-first {
@@ -117,10 +134,15 @@
 }
 
 .deals-item {
+background: linear-gradient(180deg, #2FC458 74.88%, #8FE859 95.27%);
+width: 173px;
+height: 349px;
+    
+@include desktop {
   width: 285px;
   height: 407px;
-  background: linear-gradient(180deg, #2FC458 74.88%, #8FE859 95.27%);
   border-radius: 20px;
+  }
 }
 
 .white-background {
@@ -210,4 +232,15 @@
   line-height: 15px;
 
   color: #000000;
+}
+
+.offers-item-title.black, .new-price.black, .new-price.black, mark.black {
+ color: #000000;
+}
+
+.offers-item-text.black {
+  padding: 6px 9px;
+  background: #BDEDBC;
+  border-radius: 29px;
+  color: #425342;
 }
