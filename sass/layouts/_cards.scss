@@ -1,7 +1,11 @@
 .cards {
+  display: none;
+
+  @include desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  }
 }
 
 .card {
@@ -10,11 +14,48 @@
 
 .card-description {
   position: absolute;
+  left: 20px;
+  bottom: 26px;
+  width: 162px;
+  height: 129px;
+
+  @include desktop {
   left: 45px;
   bottom: 40px;
-
   width: 325px;
   height: 136px;
+  }
+}
+
+.card-description h3 {
+  width: 94px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 4px;
+  color: #000000;;
+}
+
+.card-description span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 100%;
+
+  color: #000000;
+}
+
+.card-description.white h3 {
+  width: 126px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #FFFFFF;
 }
 
 .card-description.white {
@@ -23,22 +64,27 @@
 }
 
 .card-text {
-  width: 325px;
-  height: 88px;
-  margin-bottom: 26px;
+  width: 147px;
+  height: 40px;
+  margin-bottom: 12px;
 
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 8px;
   line-height: 160%;
 
   color: #000000;
+
+  @include desktop {
+    width: 325px;
+    height: 88px;
+    margin-bottom: 26px;
+    font-size: 18px;
+  }
 }
 
 .card-text.white{
-  width: 257px;
-  height: 87px;
   color: #FFFFFF;
 }
 
@@ -52,11 +98,36 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 8px;
   line-height: 120%;
   color: #000000;
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .card-link.white {
   color: #FFFFFF; 
+}
+
+
+// Mobile
+.cards-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.card-description-title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 12px;
 }

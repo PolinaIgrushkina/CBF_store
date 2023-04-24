@@ -904,17 +904,53 @@ body {
   }
 }
 
-.brands {
+.more-offers-mob {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1920px) {
+  .more-offers-mob {
+    display: none;
+  }
+}
+
+.brands {
+  display: none;
+}
+@media screen and (min-width: 1920px) {
+  .brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.brands-mob {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (min-width: 1920px) {
+  .brands-mob {
+    display: none;
+  }
 }
 
 .brands-first-column {
-  width: 48%;
   display: flex;
-  flex-direction: column;
-  gap: 31px;
+  flex-direction: row;
+  gap: 15px;
+}
+@media screen and (min-width: 1920px) {
+  .brands-first-column {
+    width: 48%;
+    flex-direction: column;
+    gap: 31px;
+  }
 }
 
 .first, .second {
@@ -929,17 +965,25 @@ body {
 
 .brand-name {
   position: absolute;
-  left: 26px;
-  bottom: 24px;
+  left: 12px;
+  bottom: 12px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 100%;
+  font-size: 18px;
+  line-height: 120%;
   color: #FFFFFF;
 }
 .brand-name:hover, .brand-name :focus {
   text-decoration: underline;
+}
+@media screen and (min-width: 1920px) {
+  .brand-name {
+    left: 26px;
+    bottom: 24px;
+    font-size: 36px;
+    line-height: 100%;
+  }
 }
 
 .brands-second-column {
@@ -947,10 +991,60 @@ body {
   border-radius: 34px;
 }
 
-.cards {
+.brand-card-mob {
+  position: relative;
+  display: none;
+}
+
+.brand-card-mob.active-card {
+  display: block;
+  width: 170px;
+  height: 196px;
+}
+
+.brands-mob-img {
+  width: 100%;
+  height: 100%;
+}
+
+.dots-mob {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1920px) {
+  .dots-mob {
+    display: none;
+  }
+}
+
+.dot-mob {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3F3C3C;
+  cursor: pointer;
+}
+
+.active-dot-mob {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00D700;
+}
+
+.cards {
+  display: none;
+}
+@media screen and (min-width: 1920px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .card {
@@ -959,10 +1053,48 @@ body {
 
 .card-description {
   position: absolute;
-  left: 45px;
-  bottom: 40px;
-  width: 325px;
-  height: 136px;
+  left: 20px;
+  bottom: 26px;
+  width: 162px;
+  height: 129px;
+}
+@media screen and (min-width: 1920px) {
+  .card-description {
+    left: 45px;
+    bottom: 40px;
+    width: 325px;
+    height: 136px;
+  }
+}
+
+.card-description h3 {
+  width: 94px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+.card-description span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.card-description.white h3 {
+  width: 126px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #FFFFFF;
 }
 
 .card-description.white {
@@ -971,20 +1103,26 @@ body {
 }
 
 .card-text {
-  width: 325px;
-  height: 88px;
-  margin-bottom: 26px;
+  width: 147px;
+  height: 40px;
+  margin-bottom: 12px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 8px;
   line-height: 160%;
   color: #000000;
 }
+@media screen and (min-width: 1920px) {
+  .card-text {
+    width: 325px;
+    height: 88px;
+    margin-bottom: 26px;
+    font-size: 18px;
+  }
+}
 
 .card-text.white {
-  width: 257px;
-  height: 87px;
   color: #FFFFFF;
 }
 
@@ -998,13 +1136,38 @@ body {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 8px;
   line-height: 120%;
   color: #000000;
+}
+@media screen and (min-width: 1920px) {
+  .card-link {
+    font-size: 18px;
+  }
 }
 
 .card-link.white {
   color: #FFFFFF;
+}
+
+.cards-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1920px) {
+  .cards-mob {
+    display: none;
+  }
+}
+
+.card-description-title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .deals-title-div {

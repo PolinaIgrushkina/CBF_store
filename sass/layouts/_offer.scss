@@ -356,3 +356,16 @@ color: #FFFFFF;
     display: none;
   }
 }
+
+.more-offers-mob {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  @include desktop {
+    display: none;
+  }
+}

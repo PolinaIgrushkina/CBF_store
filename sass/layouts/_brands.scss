@@ -1,14 +1,34 @@
 .brands {
+  display: none;
+
+  @include desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  }
+}
+
+.brands-mob {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @include desktop {
+    display: none; 
+  }
 }
 
 .brands-first-column {
-  width: 48%;
   display: flex;
-  flex-direction: column;
-  gap: 31px;
+  flex-direction: row;
+  gap: 15px;
+
+
+  @include desktop {
+    width: 48%;
+    flex-direction: column;
+    gap: 31px;
+  }
 }
 
 .first, .second {
@@ -23,22 +43,74 @@
 
 .brand-name {
   position: absolute;
-  left: 26px;
-  bottom: 24px;
+  left: 12px;
+  bottom: 12px;
 
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 100%;
+  font-size: 18px;
+  line-height: 120%;
   color: #FFFFFF;
 
   &:hover, :focus {
     text-decoration: underline;
+  }
+
+  @include desktop {
+    left: 26px;
+    bottom: 24px;
+    font-size: 36px;
+    line-height: 100%;
   }
 }
 
 .brands-second-column {
   width: 48%;
   border-radius: 34px;
+}
+
+// Mobile slider
+.brand-card-mob {
+  position: relative;
+  display: none;
+}
+
+.brand-card-mob.active-card {
+  display: block;
+  width: 170px;
+  height: 196px;
+}
+
+.brands-mob-img {
+  width: 100%;
+  height: 100%;
+}
+
+.dots-mob {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.dot-mob {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3F3C3C;
+  cursor: pointer;
+} 
+
+.active-dot-mob {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00D700;
 }
