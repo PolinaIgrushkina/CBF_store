@@ -1,14 +1,16 @@
 const sliderImages = [
   "images/hero-1x.jpg",
   "images/hero2-1x.jpg",
-  "images/hero-1x.jpg",
+  "images/hero3-1x.jpg",
 ];
 
 const slider = document.querySelector(".slider");
-const sliderImage = slider.querySelector(".slider-image");
+const sliderImage = slider.querySelector(".slider-image-desk");
+sliderImage.style.display = "block";
 const prevBtn = slider.querySelector(".slider-btn-prev");
 const nextBtn = slider.querySelector(".slider-btn-next");
 const dotsContainer = slider.querySelector(".slider-dots");
+dotsContainer.style.display = "block";
 
 let currentImageIndex = 0;
 
