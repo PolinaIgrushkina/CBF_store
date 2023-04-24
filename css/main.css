@@ -643,7 +643,7 @@ body {
   height: 407px;
   padding: 28px 28px 26px 29px;
   border-radius: 17px;
-  background-image: url(../../images/violet-background.png);
+  background-image: url("../images/violet-background.png");
   background-size: cover;
   background-position: center;
 }
@@ -1261,7 +1261,7 @@ body {
   height: 408px;
   padding: 28px 28px 25px 29px;
   border-radius: 17px;
-  background-image: url(../../images/green-background.png);
+  background-image: url("../images/green-background-1x.png");
   background-size: cover;
   background-position: center;
 }
